@@ -11,14 +11,22 @@ body {
 .search-header {
   display: flex;
   justify-content: space-between;
+  gap: 65px;
   align-items: center;
   padding: 5px 30px 0px 45px;
+}
+.search-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 .logo {
   width: 125px;
 }
 .search-bar {
-  width: 70%;
+  width: 75%;
   background-color: #252a4f;
   display: flex;
   justify-content: space-between;
@@ -78,6 +86,7 @@ nav {
   padding: 15px;
   background-color: #252a4f;
   border-radius: 10px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -151,3 +160,62 @@ nav a:hover {
 .item-details .btn-buy {
   margin-left: 10px;
 }
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+  .logo {
+    width: 175px;
+  }
+  .search-header {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .search-bar {
+    margin-left: 0;
+  }
+  .search-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .container {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav {
+    margin: 25px;
+
+    align-items: center;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item {
+    /* width: 50%; */
+    margin: 10px auto;
+  }
+}
+
+/* Для широкоформатних дисплеїв */
+/* @media (min-width: 1200px) {
+  .search-bar {
+    width: 50%;
+  }
+
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .item-img {
+    width: 150px;
+  }
+
+  .btn-buy {
+    padding: 20px;
+  }
+} */
