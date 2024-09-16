@@ -160,7 +160,7 @@ nav a:hover {
 .item-details .btn-buy {
   margin-left: 10px;
 }
-/* Для мобільних пристроїв */
+
 @media (max-width: 768px) {
   .logo {
     width: 175px;
@@ -195,7 +195,6 @@ nav a:hover {
   }
 
   .item {
-    /* width: 50%; */
     margin: 10px auto;
   }
 }
