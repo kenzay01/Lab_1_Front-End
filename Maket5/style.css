@@ -5,7 +5,7 @@
   font-family: "Reddit Sans Condensed", sans-serif;
 }
 body {
-  background-color: #303874;
+  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,8 @@ footer {
   width: 100%;
   height: 75px;
   border-top: 3px solid #111325;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: #252b5a;
 }
 footer section {
   display: flex;
@@ -28,6 +30,9 @@ footer section {
 }
 footer section ul {
   list-style: none;
+}
+footer section ul li {
+  color: aliceblue;
 }
 main {
   display: flex;
@@ -44,10 +49,20 @@ main {
 }
 .logo-img {
   width: 200px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 .logo-title {
-  color: aliceblue;
+  color: #252b5a;
   font-size: 50px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.logo-slogan {
+  color: #252b5a;
+  font-size: 30px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.logo-title span {
+  color: #663316;
 }
 .cards-container {
   display: flex;
@@ -58,30 +73,38 @@ main {
   margin-bottom: 30px;
 }
 .card {
-  background-color: aliceblue;
+  background-color: #252b5a;
   border: 5px solid #111325;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 15px;
   max-width: 400px;
-  max-height: 200px;
+  height: 175px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 .card-info {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
 }
 .card-info h3 {
   font-size: 24px;
+  color: aliceblue;
 }
 .card-info p {
+  color: rgb(198, 198, 198);
   font-size: 12px;
 }
 .card-img {
   width: 125px;
   height: 125px;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 .email-container {
   display: flex;
@@ -89,19 +112,26 @@ main {
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
 }
 .email-container input {
   padding: 10px;
   width: 300px;
   border: 3px solid #111325;
   outline: none;
+  border-radius: 5px;
 }
 .email-container button {
   padding: 12px;
-  background-color: #111325;
+  background-color: #252b5a;
+  border-radius: 5px;
   color: aliceblue;
   border: none;
   cursor: pointer;
+  transition: all 0.1s;
+}
+.email-container button:hover {
+  background-color: #111325;
 }
 @media (max-width: 768px) {
   main {
