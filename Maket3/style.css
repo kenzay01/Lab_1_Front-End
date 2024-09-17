@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f5f5f5;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 50px 40px 50px;
+}
+header img {
+  width: 150px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.btn {
+  background-color: #e6e6e6;
+  color: #252a4f;
+  padding: 15px 100px;
+  border-radius: 5px;
+  border: 3px solid #252a4f;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background-color: #252a4f;
+  color: #e6e6e6;
+  border: 3px solid aliceblue;
+}
+.register-main {
+  padding: 15px 45px;
+}
+.content-container-1 {
+  background-color: #252a4f;
+  display: flex;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+.content-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 25px;
+  margin: 15px 15px 15px 25px;
+}
+.content-image-1 {
+  width: 50%;
+  text-align: center;
+  align-content: center;
+}
+.content-image-1 img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+.content-info-1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+.content-info-1 p {
+  font-size: 30px;
+  color: rgb(195, 195, 196);
+  margin-bottom: 30px;
+}
+.content-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+.card-2 {
+  background-color: #252a4f;
+  max-width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.card-2 h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+  /* margin-bottom: 15px; */
+}
+.card-2 p {
+  color: rgb(195, 195, 196);
+  padding: 12px 0;
+}
+.content-container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0 0 0;
+  padding: 20px 0;
+  background-color: #252a4f;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+.header-content-3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.content-3 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+.card-3 {
+  background-color: #252a4f;
+  max-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid aliceblue;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.number {
+  font-size: 100px;
+  font-weight: bold;
+  color: aliceblue;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.card-3-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 7px;
+}
+.card-3-info h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.card-3-info p {
+  color: rgb(195, 195, 196);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: aliceblue;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo {
+  flex: 2;
+}
+
+.footer-logo img {
+  width: 100px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.footer-list {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.footer-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-list ul li {
+  padding: 10px 0px;
+}
+
+.footer-list ul li a {
+  text-decoration: none;
+  color: #252a4f;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 20px;
+  }
+  header img {
+    width: 100px;
+  }
+  .btn {
+    padding: 15px 50px;
+  }
+  .register-main {
+    padding: 15px 30px;
+  }
+  .content-info-1 h1 {
+    font-size: 24px;
+  }
+  .content-info-1 p {
+    font-size: 16px;
+  }
+  .content-image-1 {
+    margin-right: 10px;
+  }
+  .content-image-1 img {
+    width: 175px;
+  }
+  .header-content-3 {
+    font-size: 26px;
+  }
+  footer {
+    padding: 15px 30px;
+  }
+}
