@@ -166,6 +166,7 @@ nav a:hover {
 @media (max-width: 768px) {
   .logo {
     width: 175px;
+    margin: 10px;
   }
   .search-header {
     flex-direction: column;
@@ -187,14 +188,19 @@ nav a:hover {
   }
 
   nav {
-    margin: 25px;
-    /* align-items: center; */
+    margin: 0px;
+    margin-bottom: 10px;
     flex-direction: row;
     justify-content: space-around;
+  }
+  nav a {
+    font-size: 14px;
+    margin: 0;
   }
 
   .content {
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .item {
@@ -202,7 +208,7 @@ nav a:hover {
   }
   .item-img {
     width: 100%;
-    height: 350px;
+    height: 100%;
   }
   .item-details {
     flex-direction: column;
