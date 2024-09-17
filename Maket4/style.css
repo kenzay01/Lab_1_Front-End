@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #303874;
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  background-color: aliceblue;
 }
 
 .main-container {
@@ -19,12 +21,13 @@ body {
   margin: 20px;
   background-color: #252b5a;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
   width: 100px;
   padding: 5px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
 .content {
@@ -35,23 +38,28 @@ body {
 
 .content .card {
   width: 100%;
-  height: 165px;
-  margin: 5px;
-  padding: 5px;
+  height: 175px;
+  margin: 8px;
+  /* padding: 5px; */
   overflow: visible;
-  border-bottom: 3px solid #252b5a;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid #252b5a;
+  border-radius: 10px;
 }
 
 .content .card img {
-  width: 150px;
-  /* height: auto; */
+  width: 140px;
+  border: 3px solid #252b5a;
 }
 
 .image-container {
+  height: 100%;
   float: left;
   width: 400px;
   margin-right: 20px;
   text-align: center;
+  align-content: center;
   overflow: auto;
 }
 
@@ -62,28 +70,29 @@ body {
 
 .card-info h1 {
   font-size: 24px;
-  color: #fff;
+  color: #252b5a;
 }
 
 .card-info h2 {
-  font-size: 14px;
-  color: #bbb;
-  margin-bottom: 10px;
+  font-size: 13px;
+  color: #252b5a;
+  margin-bottom: 2px;
 }
 
 .card-info p {
   font-size: 16px;
-  color: #ccc;
+  color: #252b5a;
 }
 
 .sidebar {
   float: left;
   width: 20%;
   min-height: 100%;
-  background-color: #252a4f;
+  background-color: aliceblue;
   padding: 25px;
+  border-radius: 10px;
   box-sizing: border-box;
-
+  border: 5px solid #252b5a;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .sidebar section {
@@ -91,13 +100,13 @@ body {
 }
 
 .sidebar h1 {
-  color: white;
+  color: #252b5a;
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .sidebar p {
-  color: #ddd;
+  color: #303874;
 }
 
 @media (max-width: 768px) {
@@ -105,12 +114,13 @@ body {
     width: 100%;
   }
   .content .card {
-    height: 175px;
+    height: 200px;
   }
   .image-container {
     width: 45%;
     height: 100%;
     align-content: center;
+    margin-left: 10px;
   }
   .content .card img {
     width: 100%;
