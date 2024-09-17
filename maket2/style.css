@@ -198,23 +198,3 @@ nav a:hover {
     margin: 10px auto;
   }
 }
-
-/* Для широкоформатних дисплеїв */
-/* @media (min-width: 1200px) {
-  .search-bar {
-    width: 50%;
-  }
-
-  .content {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-
-  .item-img {
-    width: 150px;
-  }
-
-  .btn-buy {
-    padding: 20px;
-  }
-} */
