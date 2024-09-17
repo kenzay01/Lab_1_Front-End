@@ -134,11 +134,8 @@ main {
   background-color: #111325;
 }
 @media (max-width: 768px) {
-  main {
-    /* margin-bottom: 0px; */
-  }
   .logo-img {
-    width: 150px;
+    width: 110px;
   }
   .logo-title {
     font-size: 30px;
