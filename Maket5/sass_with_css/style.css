@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  border-top: 3px solid #111325;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #252b5a;
+}
+footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+footer section ul {
+  list-style: none;
+}
+footer section ul li {
+  color: aliceblue;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 40px 60px 40px;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.logo-container .logo-img {
+  width: 200px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.logo-container .logo-title {
+  color: #252b5a;
+  font-size: 50px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.logo-container .logo-title span {
+  color: #663316;
+}
+.logo-container .logo-slogan {
+  color: #252b5a;
+  font-size: 30px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #252b5a;
+  border: 5px solid #111325;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 15px;
+  max-width: 400px;
+  height: 175px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+}
+.card .card-info h3 {
+  font-size: 18px;
+  color: aliceblue;
+}
+.card .card-info p {
+  color: rgb(198, 198, 198);
+  font-size: 12px;
+}
+.card .card-img {
+  width: 125px;
+  height: 125px;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  -webkit-filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+}
+.email-container input {
+  padding: 10px;
+  width: 300px;
+  border: 3px solid #111325;
+  outline: none;
+  border-radius: 5px;
+}
+.email-container button {
+  padding: 12px;
+  background-color: #252b5a;
+  border-radius: 5px;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.email-container button:hover {
+  background-color: #111325;
+}
+
+@media (max-width: 768px) {
+  .logo-container .logo-img {
+    width: 110px;
+  }
+  .logo-container .logo-title {
+    font-size: 30px;
+  }
+  .logo-container .logo-slogan {
+    font-size: 18px;
+  }
+  .card {
+    max-height: 150px;
+  }
+  .card .card-info {
+    gap: 0;
+  }
+  .card .card-img {
+    width: 100px;
+    height: 100px;
+  }
+  .card .card-info h3 {
+    font-size: 14px;
+  }
+  .card .card-info p {
+    font-size: 10px;
+  }
+  .email-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  footer {
+    font-size: 14px;
+  }
+}

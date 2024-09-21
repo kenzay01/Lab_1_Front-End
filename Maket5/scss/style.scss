@@ -1,0 +1,205 @@
+$primary-color: #252b5a;
+$box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+$mid-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+$small-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  border-top: 3px solid #111325;
+  box-shadow: $box-shadow;
+  background-color: $primary-color;
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 5px;
+    font-weight: 500;
+
+    ul {
+      list-style: none;
+
+      li {
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px 60px 40px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .logo-img {
+    width: 200px;
+    filter: drop-shadow($mid-box-shadow);
+  }
+
+  .logo-title {
+    color: #252b5a;
+    font-size: 50px;
+    filter: drop-shadow($mid-box-shadow);
+
+    span {
+      color: #663316;
+    }
+  }
+
+  .logo-slogan {
+    color: $primary-color;
+    font-size: 30px;
+    filter: drop-shadow($mid-box-shadow);
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: $primary-color;
+  border: 5px solid #111325;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  max-width: 400px;
+  height: 175px;
+  box-shadow: $box-shadow;
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+
+    h3 {
+      font-size: 18px;
+      color: aliceblue;
+    }
+
+    p {
+      color: rgb(198, 198, 198);
+      font-size: 12px;
+    }
+  }
+
+  .card-img {
+    width: 125px;
+    height: 125px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    object-fit: cover;
+  }
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.5));
+
+  input {
+    padding: 10px;
+    width: 300px;
+    border: 3px solid #111325;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 12px;
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+      background-color: #111325;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    .logo-img {
+      width: 110px;
+    }
+    .logo-title {
+      font-size: 30px;
+    }
+    .logo-slogan {
+      font-size: 18px;
+    }
+  }
+
+  .card {
+    max-height: 150px;
+    .card-info {
+      gap: 0;
+    }
+    .card-img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .card-info h3 {
+      font-size: 14px;
+    }
+
+    .card-info p {
+      font-size: 10px;
+    }
+  }
+
+  .email-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
