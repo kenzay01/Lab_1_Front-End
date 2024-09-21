@@ -1,4 +1,7 @@
+// Змінні для кольорів
 $primary-color: #252b5a;
+$secondary-color: #111325;
+$white-color: aliceblue;
 $box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 $mid-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 $small-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -11,7 +14,7 @@ $small-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 body {
-  background-color: aliceblue;
+  background-color: $white-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +26,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 75px;
-  border-top: 3px solid #111325;
+  border-top: 3px solid $secondary-color;
   box-shadow: $box-shadow;
   background-color: $primary-color;
 
@@ -39,7 +42,7 @@ footer {
       list-style: none;
 
       li {
-        color: aliceblue;
+        color: $white-color;
       }
     }
   }
@@ -92,7 +95,7 @@ main {
 
 .card {
   background-color: $primary-color;
-  border: 5px solid #111325;
+  border: 5px solid $secondary-color;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -111,7 +114,7 @@ main {
 
     h3 {
       font-size: 18px;
-      color: aliceblue;
+      color: $white-color;
     }
 
     p {
@@ -123,7 +126,7 @@ main {
   .card-img {
     width: 125px;
     height: 125px;
-    border: 2px solid aliceblue;
+    border: 2px solid $white-color;
     border-radius: 5px;
     box-shadow: $box-shadow;
     object-fit: cover;
@@ -141,7 +144,7 @@ main {
   input {
     padding: 10px;
     width: 300px;
-    border: 3px solid #111325;
+    border: 3px solid $secondary-color;
     outline: none;
     border-radius: 5px;
   }
@@ -150,13 +153,13 @@ main {
     padding: 12px;
     background-color: $primary-color;
     border-radius: 5px;
-    color: aliceblue;
+    color: $white-color;
     border: none;
     cursor: pointer;
     transition: all 0.1s;
 
     &:hover {
-      background-color: #111325;
+      background-color: $secondary-color;
     }
   }
 }
