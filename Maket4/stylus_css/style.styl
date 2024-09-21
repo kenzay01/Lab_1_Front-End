@@ -1,0 +1,133 @@
+primary-color = #252b5a
+secondary-color = #303874
+background-color = aliceblue
+font-family = "Reddit Sans Condensed", sans-serif
+box-shadow = 0 0 20px rgba(0, 0, 0, 0.5)
+border-radius = 10px
+
+* 
+  margin 0
+  padding 0
+  box-sizing border-box
+
+body 
+  font-family font-family
+  font-optical-sizing auto
+  background-color background-color
+
+.main-container 
+  margin 0px 25px
+
+.logo 
+  clear left
+  height 100px
+  text-align center
+  margin 20px
+  background-color primary-color
+  border-radius 15px
+  box-shadow box-shadow
+
+  img 
+    width 100px
+    padding 5px
+    filter drop-shadow(0 0 5px rgba(0, 0, 0, 0.5))
+
+.content 
+  float left
+  width 80%
+  height 100%
+
+  .card 
+    width 100%
+    height 175px
+    margin 8px
+    overflow visible
+    box-shadow box-shadow
+    border 5px solid primary-color
+    border-radius border-radius
+
+    img 
+      width 140px
+      border 3px solid primary-color
+
+.image-container 
+  height 100%
+  float left
+  width 400px
+  margin-right 20px
+  text-align center
+  align-content center
+  overflow auto
+  object-fit cover
+
+.card-info 
+  float left
+  width 350px
+
+  h1 
+    font-size 24px
+    color primary-color
+
+  h2 
+    font-size 13px
+    color primary-color
+    margin-bottom 2px
+
+  p 
+    font-size 16px
+    color primary-color
+
+.sidebar 
+  float left
+  width 20%
+  min-height 100%
+  background-color background-color
+  padding 25px
+  border-radius border-radius
+  border 5px solid primary-color
+  box-shadow 0 0 10px rgba(0, 0, 0, 0.5)
+
+  section 
+    margin-bottom 50px
+
+    h1 
+      color primary-color
+      font-size 20px
+      padding-bottom 5px
+
+    p 
+      color secondary-color
+
+@media (max-width: 768px) 
+  .content 
+    width 100%
+
+    .card 
+      height 200px
+
+    .image-container 
+      width 45%
+      height 100%
+      align-content center
+      margin-left 10px
+
+    .card img 
+      width 100%
+
+    .card-info 
+      width 150px
+
+      h1 
+        font-size 16px
+
+      h2 
+        font-size 10px
+        margin-bottom 4px
+
+      p 
+        font-size 12px
+
+  .sidebar 
+    width 100%
+    padding-bottom 0
+    margin 10px 5px

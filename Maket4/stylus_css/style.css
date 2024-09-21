@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f0f8ff;
+}
+.main-container {
+  margin: 0px 25px;
+}
+.logo {
+  clear: left;
+  height: 100px;
+  text-align: center;
+  margin: 20px;
+  background-color: #252b5a;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.logo img {
+  width: 100px;
+  padding: 5px;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+.content {
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+.content .card {
+  width: 100%;
+  height: 175px;
+  margin: 8px;
+  overflow: visible;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 5px solid #252b5a;
+  border-radius: 10px;
+}
+.content .card img {
+  width: 140px;
+  border: 3px solid #252b5a;
+}
+.image-container {
+  height: 100%;
+  float: left;
+  width: 400px;
+  margin-right: 20px;
+  text-align: center;
+  align-content: center;
+  overflow: auto;
+  object-fit: cover;
+}
+.card-info {
+  float: left;
+  width: 350px;
+}
+.card-info h1 {
+  font-size: 24px;
+  color: #252b5a;
+}
+.card-info h2 {
+  font-size: 13px;
+  color: #252b5a;
+  margin-bottom: 2px;
+}
+.card-info p {
+  font-size: 16px;
+  color: #252b5a;
+}
+.sidebar {
+  float: left;
+  width: 20%;
+  min-height: 100%;
+  background-color: #f0f8ff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 5px solid #252b5a;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.sidebar section {
+  margin-bottom: 50px;
+}
+.sidebar section h1 {
+  color: #252b5a;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.sidebar section p {
+  color: #303874;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+  .content .card {
+    height: 200px;
+  }
+  .content .image-container {
+    width: 45%;
+    height: 100%;
+    align-content: center;
+    margin-left: 10px;
+  }
+  .content .card img {
+    width: 100%;
+  }
+  .content .card-info {
+    width: 150px;
+  }
+  .content .card-info h1 {
+    font-size: 16px;
+  }
+  .content .card-info h2 {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .content .card-info p {
+    font-size: 12px;
+  }
+  .sidebar {
+    width: 100%;
+    padding-bottom: 0;
+    margin: 10px 5px;
+  }
+}
